@@ -1,3 +1,29 @@
+# 站点基础配置（保留你的原有内容，补充完整必填项）
 title: 我的 LeetCode 刷题日记
 description: 记录每天刷的面试 LeetCode 题
+baseurl: "/leetcode-journal" # 必须和你的仓库名完全一致！！！
+url: "https://pyy66620.github.io" # 你的GitHub Pages固定域名
+author: pyy66620
+
+# 主题配置
 theme: minima
+minima:
+  skin: classic # 主题配色，可选 classic/dark/solarized/solarized-dark
+
+# 【重中之重】Markdown渲染+代码高亮配置（解决代码乱序的核心）
+markdown: kramdown
+kramdown:
+  input: GFM # 启用GitHub风格Markdown，完美兼容代码块、表格等语法
+  hard_wrap: false
+  syntax_highlighter: rouge # 启用GitHub官方支持的代码高亮引擎
+highlighter: rouge # 全局代码高亮配置
+
+# 文章链接配置（和你当前的文章链接格式完全兼容）
+permalink: /:year/:month/:day/:title.html
+# 首页文章分页
+paginate: 10
+
+# 排除不需要渲染的文件
+exclude:
+  - README.md
+  - LICENSE
