@@ -2,5 +2,6 @@
 layout: home
 ---
 
-<!-- 这里可以写首页想展示的内容，也可以空着 -->
-<!-- 空着的话，Jekyll会自动按日期倒序展示你的所有刷题文章 -->
+<div style="text-align:center; font-size:1.1em; margin: 20px 0; color: #2c3e50; background: #f4f4f4; padding: 12px; border-radius: 8px;">
+  🚀 {{ site.data.motto.text }}
+</div>
